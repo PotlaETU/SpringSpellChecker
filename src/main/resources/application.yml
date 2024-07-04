@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: ortho-check
+
+server:
+  port: 11050
