@@ -1,13 +1,13 @@
-package com.projects.orthocheck;
+package com.projects.springspellchecker;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class OrthoCheckApplication {
+public class SpellSpringChecker {
 
     public static void main(String[] args) {
-        SpringApplication.run(OrthoCheckApplication.class, args);
+        SpringApplication.run(SpellSpringChecker.class, args);
     }
 
 }

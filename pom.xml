@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.projects</groupId>
-    <artifactId>OrthoCheck</artifactId>
+    <artifactId>SpellSpringChecker</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>OrthoCheck</name>
-    <description>OrthoCheck</description>
+    <name>SpellSpringChecker</name>
+    <description>SpellSpringChecker</description>
     <url/>
     <licenses>
         <license/>
