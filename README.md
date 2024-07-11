@@ -4,6 +4,8 @@ This project is a spell checker that uses AI to find and correct spelling mistak
 It uses [Llama3](https://llama.meta.com/llama3/), a language model created by Meta.
 Everything is hosted locally, so no data is sent to any server.
 
+Port used is `11050`
+
 ## Tools used
 
 - Spring Boot
