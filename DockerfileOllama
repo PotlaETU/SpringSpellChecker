@@ -1,0 +1,10 @@
+FROM ollama/ollama:latest
+
+WORKDIR /tmp
+
+COPY ./Modelfile /tmp/Modelfile
+
+# Launch the server and create the model
+RUN nohup bash -c "ollama serve &" && sleep 5 && ollama create llama-spell-checker -f ./Modelfile
+
+EXPOSE 11434
