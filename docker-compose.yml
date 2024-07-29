@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  spring:
+    image: anthorld/spring-spell-checker:1.0
+    ports:
+      - "11050:11050"
+  ai:
+    image: anthorld/ai-spell-checker:1.0
+    ports:
+      - "11434:11434"
+
+networks:
+  default:
+    external:
+      name: ortho-check
