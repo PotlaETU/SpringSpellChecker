@@ -30,7 +30,7 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           context: .
-          dockerfile: DockerfileSpring
+          dockerfile: Dockerfile
           push: false
           tags: ${{ secrets.DOCKER_HUB_USERNAME }}/spring-spell-checker:latest
 
@@ -44,6 +44,6 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           context: .
-          dockerfile: DockerfileSpring
+          dockerfile: Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_HUB_USERNAME }}/spring-spell-checker:latest
