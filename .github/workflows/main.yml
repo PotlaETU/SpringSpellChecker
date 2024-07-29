@@ -1,12 +1,12 @@
-name: build and deploy spring-spell-checker
+name: build spring-spell-checker docker image
 on:
   push:
     branches:
       - main
 
 jobs:
-  build-deploy:
-    name: build and deploy spring-spell-checker
+  build:
+    name: push spring-spell-checker docker image to docker hub
     runs-on: ubuntu-22.04
     steps:
       - name: checkout code
@@ -32,7 +32,7 @@ jobs:
           context: .
           dockerfile: DockerfileSpring
           push: false
-          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/spring-spell-checker:v1.0.0
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/spring-spell-checker:latest
 
       - name: login to docker hub
         uses: docker/login-action@v1
@@ -46,4 +46,4 @@ jobs:
           context: .
           dockerfile: DockerfileSpring
           push: true
-          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/spring-spell-checker:v1.0.0
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/spring-spell-checker:latest
