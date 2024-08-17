@@ -24,3 +24,8 @@ git clone https://github.com/PotlaETU/SpellSpringChecker.git
 ```bash
 docker-compose up -d --build
 ```
+
+## Links to Docker images
+
+- [Spring back-end](https://registry.hub.docker.com/r/anthorld/spring-spell-checker)
+- [AI](https://registry.hub.docker.com/r/anthorld/ai-spell-checker)
